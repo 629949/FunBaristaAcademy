@@ -8,7 +8,39 @@
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    border: 0.50px solid black;
-
+    background-color: brown;
+    border-radius: 5px;
 } 
+
+.heading {
+    display: flex;
+    width: 200px;
+    height: 100px;
+}
+
+.nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+li, ul {
+    text-decoration: none;
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(154, 120, 79);
+}
+
+a:hover {
+    color: rgb(233, 222, 12);
+    border-bottom: 1px solid black;
+}
+
+
 
