@@ -1,0 +1,4 @@
+;/*FB_PKG_DELIM*/
+
+__d("usePolarisGetFollowerListQuery_instagramRelayOperation",[],(function(a,b,c,d,e,f){e.exports="8313091672112108"}),null);
+__d("usePolarisGetFollowingListQuery_instagramRelayOperation",[],(function(a,b,c,d,e,f){e.exports="9005148086178742"}),null);
