@@ -1,6 +1,8 @@
 *body {
     box-sizing: border-box;
-    
+    font-family: "Roboto", system-ui;
+  font-weight: 500;
+  font-style: normal;
 }
 
 .header {
@@ -86,5 +88,5 @@ h2{
     display: flex;
     justify-content: flex- start;
     text-align: left;
-    bo
+
 }
