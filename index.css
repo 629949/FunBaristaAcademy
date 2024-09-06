@@ -3,16 +3,17 @@
     font-family: "Roboto", system-ui;
   font-weight: 500;
   font-style: normal;
+  scroll-behavior: smooth;
 }
 
 .header {
     
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
-    background-color: brown;
+    justify-content: space-between;
     border-radius: 5px;
     gap: 100px;
+    height: 500px;
 } 
 
 .heading {
@@ -25,11 +26,12 @@
 .nav {
     display: flex;
     justify-content: flex-end;
-    align-items: center;
-    position:sticky;
+    align-items: top;
+    position: top;
     z-index: 1000;
     margin-top: 50px;
-    border: 1px solid;
+    height: 50px;
+    float: inline-end;
 }
 
 li, ul {
@@ -56,14 +58,16 @@ a:hover {
     justify-content: space-around;
     align-items: center;
     margin-top: 10px;
-    
+    height: 300px;
+    border: 1px solid;
 }
 
 
 p {
     display: flex;
-    justify-content: start;
-    width: 50%;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
     align-items: start;
 }
 
@@ -72,7 +76,9 @@ p {
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    margin-top: 10px;
+    margin-top: 100px;
+   
+   border: 1px solid;
 
 }
 
@@ -81,12 +87,6 @@ p {
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    margin-top: 10px; 
+    margin-top: 100px;
 }
 
-h2{
-    display: flex;
-    justify-content: flex- start;
-    text-align: left;
-
-}
