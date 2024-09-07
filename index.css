@@ -3,8 +3,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    font-family: "Roboto", system-ui;
-    font-weight: 500;
+    font-family: "Yeseva One", system-ui;
     font-style: normal;
     scroll-behavior: smooth;
     
@@ -22,7 +21,7 @@ body {
     position:sticky;
     height: 500px;
     border: 1px solid;
-    background-image: url(/images/coffee_files/cups.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/images/coffee_files/cups.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover
@@ -30,11 +29,14 @@ body {
 
 .heading {
     display: flex;
-    width: 200px;
+    width: 300px;
     height: 100px;
     color: yellow;
-    justify-content: flex-end;
+    justify-content: center;
+    align-items: center;   
 }
+
+
 
 .nav {
     display: flex;
@@ -45,7 +47,8 @@ body {
     margin-top: 50px;
     height: 50px;
     float: inline-end;
-    border: 1px solid;
+   
+   
 }
 
 li, ul {
@@ -53,6 +56,8 @@ li, ul {
     display: flex;
     justify-content: space-around;
     gap: 20px;
+    font-size: larger;
+    color: whitesmoke;
 }
 
 a {
@@ -60,9 +65,9 @@ a {
     color: rgb(154, 120, 79);
 }
 
-a:hover {
+li:hover {
     color: rgb(233, 222, 12);
-    border-bottom: 1px solid black;
+    border-bottom: 3px solid rgb(233, 222, 12);
 }
 
 
@@ -72,8 +77,22 @@ a:hover {
     justify-content: space-around;
     align-items: center;
     margin-top: 10px;
-    height: 190px;
+    height: 500px;
+    width: 50%;
+    border-right: 1px solid;
+    background-color: #eeeff2;
+}
+
+h2 {
+    display: flex;
     border: 1px solid;
+    width: 300px;
+    height: 200px;
+    justify-content: center;
+    align-items: center;
+    color: orange;
+    font-style: italic;
+    font-weight: bolder;
 }
 
 
@@ -83,6 +102,7 @@ p {
     align-items: center;
     width: 80%;
     align-items: start;
+    border: 1px solid;
 }
 
 .why {
