@@ -5,7 +5,7 @@ body {
     justify-content: space-evenly;
     font-family: "Yeseva One", system-ui;
     font-style: normal;
-    scroll-behavior: smooth;
+    /* scroll-behavior: smooth; */
     
   }
   
@@ -20,7 +20,6 @@ body {
     gap: 100px;
     position:sticky;
     height: 500px;
-    border: 1px solid;
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/images/coffee_files/cups.jpg);
     background-repeat: no-repeat;
     background-position: center;
@@ -34,6 +33,7 @@ body {
     color: yellow;
     justify-content: center;
     align-items: center;   
+   
 }
 
 
@@ -74,35 +74,38 @@ li:hover {
 .about {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     margin-top: 10px;
     height: 500px;
     width: 50%;
-    border-right: 1px solid;
+    border-right: 1px solid orange;
+    border-radius: 5px;
     background-color: #eeeff2;
 }
 
 h2 {
     display: flex;
-    border: 1px solid;
     width: 300px;
-    height: 200px;
+    height: 100px;
     justify-content: center;
     align-items: center;
     color: orange;
     font-style: italic;
     font-weight: bolder;
+    font-size: 50px;
 }
 
 
-p {
+.story {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 80%;
+    height: 400px;
     align-items: start;
-    border: 1px solid;
+    font-size: 20px;
+    font-weight: 100px;
 }
 
 .why {
@@ -111,9 +114,8 @@ p {
     justify-content: space-around;
     align-items: center;
     margin-top: 100px;
-   
-   border: 1px solid;
-
+     
+    border: 1px solid rgb(79, 79, 135);
 }
 
 .course {
