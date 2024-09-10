@@ -97,7 +97,7 @@ h2 {
 }
 
 
-.story {
+.story, .choice {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -108,15 +108,25 @@ h2 {
     font-weight: 100px;
 }
 
+.reason {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .why {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
     margin-top: 100px;
-     
-    border: 1px solid rgb(79, 79, 135);
+     width: 70%;
+     height: 500px;
+     font-size: 20px;
+   
 }
+
+
 
 .course {
     display: flex;
