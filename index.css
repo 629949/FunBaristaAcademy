@@ -7,6 +7,7 @@ body {
     font-family: "Yeseva One", system-ui;
     font-style: normal;
     scroll-behavior: smooth;
+    background-color: #F5F0E8;
     
   }
   
@@ -24,7 +25,8 @@ body {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/images/coffee_files/cups.jpg);
     background-repeat: no-repeat;
     background-position: center;
-    background-size: cover
+    background-size: cover;
+    width: 100%;
 } 
 
 
@@ -34,13 +36,13 @@ body {
     height: 100px;
     color: yellow;
     justify-content: center;
-    align-items: center; 
-    border: solid;  
-   
+    align-items: center;  
+    margin-top: 50px;
 }
 
 
 
+/*this is for the navigation*/
 .nav {
     display: flex;
     justify-content: flex-end;
@@ -61,10 +63,10 @@ li, ul {
     gap: 20px;
     font-size: larger;
     color: whitesmoke;
-    height: 70px;
-    border: 1px solid;
+    height: 30px;
 }
 
+/*the links on the navigation*/
 a {
     display: flex;
     justify-content: center;
@@ -77,6 +79,15 @@ a {
 li:hover {
     color: rgb(233, 222, 12);
     border-bottom: 3px solid rgb(233, 222, 12);
+}
+
+.top{
+    display: flex;
+    height: 300px;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 30px;
 }
 
 div {
@@ -192,12 +203,59 @@ text-indent: 2px;
     font-style: oblique;
 }
 
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 16px; /* Adjust the gap between images */
+}
+
+.gallery {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.grid-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover; /* Adjust how images fill the grid items */
+    border-radius: 8px; /* Optional: adds rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: adds a shadow */
+}
+
+.grid-item:hover {
+    -webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+
+.staff {
+    display: flex;
+    flex-direction: column;
+    width: 900px;
+    margin: 50px 0 50px 0;
+   
+
+}
+
+.members{
+    display: flex;
+    justify-content: space-between;
+    align-items: top;
+    height: 500px;
+}
 
 #contact {
     display: flex;
+    justify-content: center;
+    align-items: center;
     gap: 100px;
     flex-direction: row;
     height: 400px;
+    width: 100%;
+    background-color: #D3BD9A;
     
 }
 
@@ -227,4 +285,6 @@ h5 {
 
 .logo{
     width: 50%;
+    height: 60%;
+    
 }
