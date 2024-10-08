@@ -20,16 +20,20 @@
                 <h1>FunBarista</h1> 
                 <p>coffee Academy</p>
            </div> 
-              <div class="nav">
-              <ul>
-              <a href="#about"><li>Our Story</li></a>
-              <a href="#us" ><li>Why us? </li></a>
-              <a href="#Gallery"><li>Gallery</li></a>
-              <a href="#curriculum"><li>Courses</li></a>
-              <a href="#contact"><li>Get in touch</li></a>
-       
-              </ul>
-              </div>
+           <div class="nav">
+            <ul>
+              <li><a href="#about">Our Story</a></li>
+              <li><a href="#us">Why us?</a></li>
+              <li><a href="#Gallery">Gallery</a></li>
+              <li><a href="#curriculum">Courses</a></li>
+              <li>
+                <a href="#contact" class="call">
+                  Get in touch <i class='bx bx-right-arrow-alt bx-fade-right' style='color:rgba(35,21,20,0.85)'  ></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+          
               <div class="welcome">
                 <h1>Welcome</h1>
                </div>
@@ -37,7 +41,7 @@
        
     </div>
 
-<div>
+<div class="us">
     <div class="about" id="about">
        
         <h2 ><span class="simple-edit">Our Story</span></h2>
@@ -65,23 +69,7 @@
     </div>
     
     <div class="gallery" id="Gallery">
-        <h4>Our story in picture</h4>
         
-            <div class="image-grid" >
-                <div class="column">
-                    <img src="/images/class/photo_4_2024-09-17_22-27-38.jpg" alt="Image 1" style="width: 60%;">
-                    <img src="images/class/photo_6_2024-09-17_22-26-42.jpg" alt="Image 2" style="width: 35%;" >
-                    <img src="images/class/photo_9_2024-09-17_22-26-08.jpg" alt="Image 3" style="width: 30%;">
-                </div>
-                 
-                <div class="column">
-                    <img src="images/class/photo_9_2024-09-17_22-26-42.jpg" alt="Image 4" style="width: 30%;">
-                    <img src="images/class/photo_15_2024-09-17_22-27-38.jpg" alt="Image 5" style="width: 30%;">
-                    <img src="images/class/photo_23_2024-09-17_22-27-38.jpg" alt="Image 6" style="width: 30%;">
-                </div>
-
-            </div>
-            
         <!-- <button href="gallery.html">see more</button> -->
     </div>
        
@@ -96,12 +84,12 @@
         </div>
         
         <div class="sample">
-            <div><p>Short courses</p><i class='bx bxs-school'></i></div>
+            <!-- <div><p>Short courses</p><i class='bx bxs-school'></i></div>
             <div><p>Hands on Training</p><span class="material-symbols-outlined">
                 school
                 </span></div>
             <div><p>Affordable</p></div>
-            <div> <p>Morning/Evening</p></div>
+            <div> <p>Morning/Evening</p></div> -->
              
         </div>
           
@@ -131,19 +119,38 @@
 
 </body>
 
-<footer id="contact">
+<footer >
+    <div class="contact">
+
+    </div>
 
 <div class="logo">
-    <img style="border-radius: 5px; background-color: #F5F0E8;" src="images/coffee_files/FUN BARISTA.jpg" alt="">
+    <img class="cup" border-radius: 5px; background-color: #F5F0E8;" src="images/coffee_files/FUN BARISTA.jpg" alt="logo">
 </div>
-<div class="links">
-    <h5>Get in touch</h5>
-<p>+256 702942503</p>
-<p>+256 788135448</p>
-<p><i class='bx bx-envelope' style="font-size: 20px; color: orange;">funBarista@gmail.com</i></p>
-<p><i class='bx bxl-whatsapp'>whatsapp</i></p>
-<p><i class='bx bxl-instagram'>Instagram</i></p>
+<div class="quicklinks">
+    <h6>QUICK LINKS</h6>
+    <a href="#about" class="easyReach">Our strory</a>
+    <a href="#curriculum" class="easyReach">Courses</a>
+    <a href="#Gallery" class="easyReach">Gallery</a>
+
+</div>
+<div class="reachout">
+    <h6>CONTACT</h6>
+    <p>+256 702942503</p>
+    <p>+256 788135448</p>
+    <p>funBarista@gmail.com</p>
 </div>
 
+<div class="reachout">
+    <h6>LOCATION</h6>
+    <P>Kisasi-Bukoto road after the traffic lights</P>
+</div>
+
+<div class="social">
+    <i class='bx bxl-instagram' style='color:#d2caca'  ></i>
+    <i class='bx bxl-facebook-circle' style='color:#d2caca'></i>
+    <i class='bx bxl-tiktok' style='color:#d2caca' ></i>
+</div>
+<i class='bx bx-arrow-to-top ' style='color:#ffffff' ></i>
 </footer>
 </html>

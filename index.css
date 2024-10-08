@@ -14,71 +14,38 @@ body {
 .header {
     
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-around;
     align-items: top;
     border-radius: 5px;
     gap: 100px;
     position:sticky;
     height: 500px;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/images/coffee_files/cups.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/images/coffee_files/jakub-zerdzicki-A_90G6Ta56A-unsplash.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     width: 100%;
+    font-family: "Be Vietnam Pro", sans-serif;
 } 
 
 
 .heading {
     display: flex;
+    flex-direction: column;
     width: 300px;
     height: 100px;
-    color: yellow;
+    color: rgb(70, 33, 9);
     justify-content: center;
+    gap: 1px;
     align-items: center;  
     margin-top: 50px;
+    border: 1px solid;
 }
 
 
 
 /*this is for the navigation*/
-.nav {
-    display: flex;
-    justify-content: flex-end;
-    align-items: top;
-    position: top;
-    z-index: 1000;
-    margin-top: 50px;
-    height: 50px;
-    float: inline-end;
-   
-   
-}
-
-li, ul {
-    text-decoration: none;
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    font-size: larger;
-    color: whitesmoke;
-    height: 30px;
-}
-
-/*the links on the navigation*/
-a {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-decoration: none;
-    height: 50px;
- 
-}
-
-li:hover {
-    color: rgb(233, 222, 12);
-    border-bottom: 3px solid rgb(233, 222, 12);
-}
 
 .top{
     display: flex;
@@ -89,12 +56,48 @@ li:hover {
     margin-top: 30px;
 }
 
-/* div {
+.nav { 
+    display: flex; /* Makes the container a flexbox */
+    flex-direction: row; /* Aligns items horizontally */
+    width: 100%; /* Takes up full width of the page */
+    justify-content: center; /* Centers the navigation items horizontally */ /* Light background color for the nav */
+    padding: 10px 0; /* Adds vertical padding */
+ }
+ 
+ .nav ul {
+    display: flex; /* Makes the list a flexbox as well */
+    flex-direction: row; /* Ensures the list items are laid out in a row */
+    list-style-type: none; /* Removes the default bullet points from the list */
+    margin: 0; /* Removes default margins */
+    padding: 0; /* Removes default padding */
+    gap: 20px; /* Adds space between the list items */
+ }
+ 
+ .nav ul li {
+    display: inline-block; /* Ensures list items stay inline */
+    padding: 10px 20px; /* Adds padding around each item */
+ }
+ 
+ .nav ul li a {
+    text-decoration: none; /* Removes underline from links */
+    color: orange; /* Dark text color */
+    font-size: 20px; /* Adjusts font size */
+    font-weight: 600; /* Slightly bold text */
+    transition: all 0.3s ease; /* Adds smooth hover effect */
+ }
+ 
+ .nav ul li a:hover {
+    background-color: #d1a684; /* Changes background color on hover */
+    color: white; /* Changes text color on hover */
+    border-radius: 5px; /* Rounds corners on hover */
+ }
+ 
+
+.us {
     display: flex;
     justify-content: space-around;
-    border: 1px solid;
     flex-direction: row;
-} */
+}
 
 .welcome {
     display: flex;
@@ -109,17 +112,16 @@ li:hover {
 }
 .about {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
     margin-top: 50px;
     height: 500px;
     width: fit-content;
-    border-right: 1px solid whitesmoke;
     border-radius: 5px;
     background-color: #eeeff2;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-    
+    font-family: "Be Vietnam Pro", sans-serif;
 
 }
 
@@ -158,14 +160,16 @@ h2 {
     align-items: start;
     font-size: 20px;
     font-weight: 100px;
+    font-family: "Be Vietnam Pro", sans-serif;
 }
 
 .reason {
     display: flex;
     justify-content: end;
     align-items: center;
-    background-image: url(images/coffee_files/coffee\ types.jpeg);
+    background-image: url(images/coffee_files/jordan-ryskamp-VmahfK-LUS8-unsplash.jpg);
     background-repeat: no-repeat;
+    background-size: cover;
     height: 800px;
     border-radius: 10px;
     overflow: hidden;
@@ -179,6 +183,8 @@ h2 {
     margin-top: 10px;
      width: 50%;
      height: 500px;
+     color: white;
+     background-color: #00000060;
      font-size: 20px;
      box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
      border-top-left-radius: 200px;
@@ -239,33 +245,11 @@ text-indent: 2px;
     font-style: oblique;
 }
 .gallery {
-    display: flex;
+    display: grid;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    border: 1px solid;
-}
-.image-grid {
-    display: flex;
-    flex-direction: column;
-    height: 50rem;
-    width: 80%;
-    justify-content: space-around;
-    border-top-right-radius: 30px;
-    border-bottom-left-radius: 30px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-}
-
-.column {
- height: 300px;
- width: 80%;
- border: 1px solid;
-}
-
-img {
-    border-radius: 3px;
-    margin-top: 10px;
-    overflow: hidden;
+    width: 100%;
 }
 
 .staff {
@@ -308,26 +292,18 @@ img {
     
 }
 
-#contact {
+footer {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: top;
     gap: 100px;
     flex-direction: row;
-    height: 400px;
+    height: 600px;
     width: 100%;
-    background-color: #D3BD9A;
+    overflow: visible;
+    background-color: #1e0c08;
+    flex-direction: row;
     
-}
-
-i {
-    display: flex;
-   font-size: 20px;
-}
-
-i:hover {
-border-bottom: 1px solid;
-color: orange;
 }
 
 h5 {
@@ -337,16 +313,62 @@ h5 {
     font-style: oblique;
 }
 
-.links{
+.quicklinks{
     display: flex;
-    justify-content: space-around;
+    color: white;
+    height: 300px;
+    width: 550px;
+    justify-content: center;
     flex-direction: column;
-    border-left: 1px solid;
+    align-items: center;
+    
 }
 
+.reachout {
+    display: flex;
+    color: white;
+    height: 300px;
+    width: 550px;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+ 
+
+}
+
+h6 {
+    display: flex;
+    color: orange;
+    font-size: large;
+    width: 150px;
+    margin-top: 10px;
+}
 .logo{
-    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
     height: 60%;
+    border: 1px solid;
+}
+
+.cup {
+    display: flex;
+    width: 100px;
+
+}
+
+.social{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100px;
+    width: 80rem;
+    border: 1px solid;
+}
+
+i {
     
 }
 
