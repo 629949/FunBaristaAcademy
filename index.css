@@ -2,12 +2,11 @@ body {
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    font-family: "Yeseva One", system-ui;
-    font-style: normal;
-    scroll-behavior:auto;
-    background-color: #F5F0E8;  
+    font-family: "Rubik", system-ui;
+    scroll-behavior: smooth;
+    background-color: #F4DFBA;  
   }
   
 
@@ -39,12 +38,11 @@ body {
     justify-content: center;
     align-items: center;  
     margin: 0;
-    border: 1PX solid;
+ 
 }
 
 .heading h1, .heading p {
     display: flex;
-    border: 1px solid;
     margin: 10px;
 }
 
@@ -80,22 +78,31 @@ body {
  }
  
  .nav ul li {
+    
     display: inline-block; /* Ensures list items stay inline */
     padding: 10px 20px; /* Adds padding around each item */
  }
  
  .nav ul li a {
+    height: 50px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
     text-decoration: none; /* Removes underline from links */
     color: orange; /* Dark text color */
     font-size: 20px; /* Adjusts font size */
     font-weight: 600; /* Slightly bold text */
-    transition: all 0.3s ease; /* Adds smooth hover effect */
+    transition: all 0.7s ease; /* Adds smooth hover effect */
  }
  
  .nav ul li a:hover {
-    background-color: #d1a684; /* Changes background color on hover */
+    display: flex;
+/* Changes background color on hover */
     color: white; /* Changes text color on hover */
-    border-radius: 5px; /* Rounds corners on hover */
+    border-radius: 25px; /* Rounds corners on hover */
+   
+    /* height: 50px;
+    width: 120px; */
  }
  
 
@@ -109,6 +116,19 @@ body {
     align-items: center;
     color: white;
 }
+
+.call:hover {
+    border: 1px solid black;
+    background-color: black;
+    height: 50px;
+    width: 180px;
+    justify-content: center;
+    border-radius: 25px;
+    align-items: center;
+    color: white;  
+}
+
+
 
 .welcome {
     display: flex;
@@ -269,8 +289,7 @@ h2 {
     background-image: url(/images/coffee_files/29f6d88e-7506-45d3-801c-ec0fd3277b7b.jpg);
     background-repeat: no-repeat;
     background-position: right;
-    background-size:cover;
-    border-radius: 50%
+    background-size:contain;
 }
 
 
@@ -290,11 +309,6 @@ h5 {
     height: 500px;
 }
 
-.teacher {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
 
 .owner {
     display: flex;
@@ -302,48 +316,107 @@ h5 {
     justify-content: center;
     align-items: center;
     border-radius: 5px;
-    border: 1px solid whitesmoke;
     width: 290px;
-    border-top-right-radius: 30px;
-    border-bottom-left-radius: 30px;
     height: 450px;
    
     
 }
 
-
-
 footer {
     display: flex;
-    justify-content: center;
-    align-items: top;
-    gap: 100px;
-    flex-direction: column;
-    height: 600px;
-    width: 100%;
-    overflow: visible;
-    background-color: black;
+    justify-content: space-around;
     flex-direction: row;
-    
+    align-items: center;
+    width: 100%;
+    overflow: hidden;
+    background-color: black;
+    padding: 5px;
+    margin-top: 5px;
 }
+
+
+.contact {
+  display: flex;
+  height: 30rem;
+  width: 60%;
+  flex-direction: column-reverse;
+  background-color: black;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+  overflow: hidden;
+  
+}
+
+.bottom{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+
+}
+
+.lower_nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+.lower_nav ul  {
+display: inline-block;
+list-style-type: none;
+display: flex;
+justify-content: center;
+flex-direction: column;
+
+}
+
+.lower_nav ul li {
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+}
+
+.lower_nav ul li a {
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+    margin: 0;
+    padding: 0;
+}
+
+.lower_nav ul li a:hover {
+    border-bottom: 1px solid orange;
+    color: burlywood;
+    transition: 0.9s;
+}
+
+
 
 
 .quicklinks{
     display: flex;
     color: white;
-    height: 300px;
-    width: 550px;
+    height: 200px;
+    width: 180px;
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
 }
 
 .reachout {
     display: flex;
     color: white;
     height: 300px;
-    width: 550px;
+    width: 250px;
     justify-content: center;
     flex-direction: column;
     align-items: center;
@@ -352,31 +425,72 @@ footer {
 
 }
 
+.numbers {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0; 
+}
+
+.numbers ul {
+ display: inline-block;
+list-style-type: none;
+display: flex;
+justify-content: center;
+flex-direction: column;
+
+}
+
+.numbers ul li {
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+}
+
 h6 {
     display: flex;
     color: orange;
-    font-size: large;
-    width: 150px;
-    margin-top: 10px;
+    font-size: medium;
+    font-family: 'Courier New', Courier, monospace;
+    width: 180px;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+.location {
+    display: flex;
+    color: white;
+    flex-direction: column;
+}
+
+.location p {
+    height: 50px ;
+    width: 70%;
+    justify-content: center;
+    align-items: center;
 }
 .logo{
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
+    width: 30%;
     height: 60%;
-    border: 1px solid white;
 }
 
-
+.logo img {
+    display: flex;
+    height: 300px;
+}
 
 .social{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     height: 100px;
-    width: 80rem;
-    border: 1px solid;
+    width: 190px;
+   
 }
 
 
