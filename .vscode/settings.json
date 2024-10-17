@@ -1,4 +1,10 @@
 {
     "liveServer.settings.multiRootWorkspaceName": "Fun-Barista-Academy",
-    "liveServer.settings.fullReload": true
+    "liveServer.settings.fullReload": true,
+    "editor.inlayHints.enabled": "off",
+    "css.hover.references": false,
+    "html.hover.references": false,
+    "less.hover.references": false,
+    "scss.hover.references": false,
+    "editor.suggest.showWords": false
 }
