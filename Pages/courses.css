@@ -1,0 +1,214 @@
+body {
+    box-sizing: border-box;
+    font-family: 'inter';
+    scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    display: flex;
+    justify-content: top;
+    flex-direction: column;
+    align-items: top;
+  
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/images/coffee_files/nathan-dumlao-ikU3J1nr52w-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+}
+
+.top {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    position: sticky;
+    border-bottom: 1px solid;
+    top: 0;
+    box-shadow: 0 0 0.7px black;
+    background-color: transparent;
+    z-index: 10;
+}
+
+.top h1{
+    margin: 0;
+    font-family: 'inter' ;
+    display: flex;
+    font-size: 23px;
+    flex-direction: column;
+    border-right: 1px solid;
+    margin: 5px;
+    color: white;
+}
+
+span {
+    font-size: 13px;
+    margin: 0;
+}
+
+.nav{
+    display: flex;
+    width: 800px;
+    justify-content: center;
+
+}
+
+.nav ul {
+    display: flex;
+    justify-content: space-around;
+}
+
+.nav ul li {
+    display: inline-block;
+    width: 150px;
+    align-content: center;
+}
+
+.nav ul li a {
+    display: flex;
+    text-decoration: none;
+    color: orange;
+    font-size: 19px;
+    transition: 0.5sec;
+    justify-content: space-around;
+}
+
+.nav ul li a:hover {
+    display: flex;
+    color: grey;
+    transition: all 0.7s ease;
+    
+}
+
+.call{
+    border: 1px solid orange;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 25px;
+}
+
+.call:hover{
+    display: flex;
+    background-color: orange;
+    color: black;
+    font-weight: 800px;
+}
+
+.scrolled {
+    background-color: grey;
+}
+.welcome{
+    display: flex;
+    font-size: 30px;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+    color: orange;
+}
+
+.fees {
+    display: flex;
+    flex-grow: 1;
+    gap: 50px;
+    height: 30rem;
+    flex-direction: column;
+    align-items: center;
+}
+
+table {
+    border: 1px solid;
+    width: 600px;
+    height: 100px;
+}
+
+tr {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+th{
+    display: flex;
+    width: 100px;
+    justify-content: center;
+    border-bottom: 1px solid;
+}
+
+td{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 200px;
+}
+
+footer{
+    border-top: 1px solid;
+    box-shadow: 0.5px black;
+    background-color: black;
+}
+
+.contact{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: black;
+    border: 1px solid white ;
+}
+
+.quicklinks{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    height: 30rem;
+    width: 20rem;
+    border: 1px solid white;
+}
+
+.numbers {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.lower_nav ul {
+    display: inline-block;
+    width: 180px;
+    text-decoration: none;
+}
+
+.lower_nav ul li{
+    display: flex;
+    width: 100px;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+.lower_nav ul li a {
+    display: flex;
+    text-decoration: none;
+    color: white;
+}
+
+.lower_nav ul li a :hover {
+    color: orange;
+    border-bottom: 1px solid orange;
+}
+
+.social{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    gap: 20px;
+    align-items: center;
+    height: 60px;
+}
