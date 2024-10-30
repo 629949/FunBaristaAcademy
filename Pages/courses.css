@@ -38,14 +38,15 @@ body {
     display: flex;
     font-size: 23px;
     flex-direction: column;
-    border-right: 1px solid;
+    border-right: 1px solid orange;
     margin: 5px;
-    color: white;
+    color: orange;
 }
 
 span {
     font-size: 13px;
     margin: 0;
+    font-style: italic;
 }
 
 .nav{
@@ -99,7 +100,7 @@ span {
 }
 
 .scrolled {
-    background-color: grey;
+    background-color: darkgray;
 }
 .welcome{
     display: flex;

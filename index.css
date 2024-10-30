@@ -19,7 +19,7 @@ body {
     align-items: center;
     border-radius: 5px;
     gap: 100px;
-    position:sticky;
+    /* position:sticky; */
     height: 500px;
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/images/coffee_files/jakub-zerdzicki-A_90G6Ta56A-unsplash.jpg);
     background-repeat: no-repeat;
@@ -64,7 +64,7 @@ body {
 
 .nav { 
     display: flex; 
-    position: sticky;
+    /* position: sticky; */
     top: 0;
     flex-direction: row; /* Aligns items horizontally */
     width: 100%; /* Takes up full width of the page */
